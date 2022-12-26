@@ -25,6 +25,7 @@ header{
     width: 50%;
     height: 150px;
     background-color: #fff;
+    min-width: 200px;
 }
 
 .header-parag{
@@ -67,6 +68,7 @@ a{
 
 }
 .container{
+    min-width: 200px;
     background-color: rgb(231, 231, 231);
 }
 .container-o{
@@ -84,4 +86,31 @@ a{
 .text p{
     font-size: 18px;
     margin-bottom: 40vh;
+}
+
+
+@media (max-width: 720px){
+    .header_inside{
+        height: 300px;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        margin-bottom: 30px;
+
+    }
+
+    .text p{
+        margin-bottom: 20vh;
+    }
+}
+
+@media (max-width: 550px){
+    .header-parag{
+        font-size: 17px;
+    }
+    .text p{
+        margin-bottom: 10vh;
+    }
 }
